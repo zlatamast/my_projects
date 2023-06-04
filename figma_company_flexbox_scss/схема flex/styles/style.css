@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(204, 204, 204);
+}
+
+.main{
+    display: flex;
+    background-color: rgb(253, 246, 178);
+    flex-direction: column;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    justify-content: flex-end;
+}
+
+.aside{
+    display: flex;
+    flex-grow: 1;
+    background-color: lightgreen;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer{
+    display: flex;
+    padding: 20px;
+    background-color: rgb(204, 204, 204);
+    justify-content: space-around;
+}
+
+.first_two{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.m1{
+    display: flex;
+    flex-basis: 50%;
+    margin: 10px;
+    justify-content: center;
+}
+
+.m2{
+    display: flex;
+    flex-basis: 50%;
+    margin: 10px;
+    justify-content: center;
+}
+
+.m3{
+    display: flex;
+    justify-content: center;
+}
+
+.footer div {
+    background-color: white;
+    padding: 20px;
+}
+
+.subtitle{
+    display: flex;
+    justify-content: center;
+}
+
+.m1 {
+    background-color: rgb(243, 252, 123);
+}
+
+.m2 {
+    background-color: rgb(243, 252, 123);
+}
+
+.m3 {
+    background-color: rgb(243, 252, 123);
+}

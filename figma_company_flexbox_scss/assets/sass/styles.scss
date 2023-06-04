@@ -1,0 +1,83 @@
+// в терминал:
+// sass --watch assets\sass\styles.scss assets\styles\styles.css
+
+// градиент в шапке
+@import "variables.scss";
+
+* {
+    border: 1px grey solid;
+}
+
+body {
+    width: 100%;
+
+    // width: 100%;
+
+
+
+    header {
+        border-color: aquamarine;
+        width: 100%;
+
+        .header__background {
+            background-image: url("assets/images/background.png");
+
+            img {
+                position: absolute;
+                width: 100%;
+                z-index: -1;
+            }
+        }
+
+        nav {
+            padding-left: 10%;
+            padding-top: 2%;
+
+            margin-right: 30%;
+
+            @include align-items-center;
+            justify-content: space-between;
+
+            .nav__menu {
+                @include align-items-center;
+
+                ul {
+                    padding-inline-start: 10px;
+                }
+
+
+                // &:hover {
+                //     text-decoration: underline 1px;
+                //     color: #000;
+                // }
+            }
+        }
+
+        .header__caption {
+            display: flex;
+            flex-direction: column;
+
+            padding: 10%;
+            margin-right: 40%;
+        }
+    }
+
+    main {
+        .main__info {
+            display: flex;
+            font-display: column;
+
+        }
+
+        .talkbubble {
+            width: 120px;
+            height: 60px;
+            border: solid 2px rgb(167, 167, 167);
+            position: relative;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+        }
+
+    }
+}
