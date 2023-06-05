@@ -1,0 +1,38 @@
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+
+    div {
+        border: 3px grey solid;
+    }
+
+    .grid__container {
+
+        height: 100%;
+        grid-column: 2/4;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 3fr 3fr 4fr;
+        gap: 20px;
+
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+
+    .square1 {
+        display: grid;
+        grid-column: 1/3;
+        grid-row: 1/3;
+
+
+    }
+
+
+}
