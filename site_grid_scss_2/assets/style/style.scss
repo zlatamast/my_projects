@@ -1,25 +1,34 @@
-    body {
+html {
+    // width: 100%;
+    height: 100%;
 
+    body {
+        border: 3px rgb(254, 18, 18) solid;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         margin: auto;
+        // width: 100%;
+        height: 100%;
 
         div {
             border: 3px grey solid;
         }
 
         .grid__container {
+            border: 3px rgb(0, 4, 255) solid;
             aspect-ratio: 1/1;
-            grid-column: 2/4;
+            grid-column: 2/3;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: 3fr 3fr 4fr;
             gap: 2%;
+            // width: 100%;
+            // height: 100%;
 
             img {
                 object-fit: cover;
                 width: 100%;
-                height: 100%
+                height: 100%;
             }
         }
 
@@ -31,5 +40,5 @@
 
         }
 
-
     }
+}
