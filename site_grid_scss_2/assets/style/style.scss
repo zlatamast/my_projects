@@ -1,28 +1,38 @@
 html {
-    // width: 100%;
+
     height: 100%;
+    margin: 0;
+
+    div {
+        border: 3px grey solid;
+    }
+
 
     body {
         border: 3px rgb(254, 18, 18) solid;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        margin: auto;
-        // width: 100%;
-        height: 100%;
+        grid-template-columns: 2% 1fr 2%;
+        grid-template-rows: 20vh 1fr 20vh;
+        justify-items: center;
 
-        div {
-            border: 3px grey solid;
-        }
+        width: 100vw;
+        // height: 100%;
+        margin: 0;
+
+
 
         .grid__container {
             border: 3px rgb(0, 4, 255) solid;
             aspect-ratio: 1/1;
             grid-column: 2/3;
+            grid-row: 2/3;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: 3fr 3fr 4fr;
             gap: 2%;
-            // width: 100%;
+            // margin: 20px;
+            // margin-bottom: 20px;
+            width: 90vw;
             // height: 100%;
 
             img {
