@@ -4,24 +4,26 @@
 // адаптивность 
 // респонсивность
 
+$light-grey: rgb(217, 217, 217);
 
 html {
 
     height: 100%;
     margin: 0;
 
-    div {
-        border: 3px grey solid;
-    }
+    // div {
+    //     border: 3px grey solid;
+    // }
 
 
 
     body {
-        border: 3px rgb(254, 18, 18) solid;
+
+
         display: grid;
         grid-template-columns: 10% 80% 10%;
         ;
-        grid-template-rows: 20vh 1fr 20vh;
+        grid-template-rows: 20vh 1fr 30vh 20vh;
         justify-items: center;
 
         width: 100vw;
@@ -29,15 +31,24 @@ html {
         margin: 0;
 
         header {
-            border: 3px rgb(111, 134, 77) solid;
+
+            // border: 3px rgb(111, 134, 77) solid;
             display: grid;
             grid-column: 1/4;
             grid-row: 1/2;
             width: 100%;
-            background-color: rgb(165, 165, 165);
+            background-color: $light-grey;
+
+            grid-template-columns: repeat(3, 1fr);
+
+
 
             nav {
-                border: 3px rgb(111, 134, 77) solid;
+                * {
+                    border: 2px rgb(205, 169, 224) solid;
+                }
+
+                // border: 3px rgb(111, 134, 77) solid;
                 width: 100%;
 
                 display: grid;
@@ -45,47 +56,72 @@ html {
                 grid-column: 2/-1;
             }
 
-            .header__picture {
-                width: 100%;
-                height: 30vh;
-                z-index: -1;
+            .header__name {
+                * {
+                    border: 2px rgb(130, 201, 237) solid;
+                }
+
+                display: grid;
+                grid-row: 2/3;
+
+                img {
+                    object-fit: cover;
+                }
             }
         }
-
-
 
         main {
             grid-column: 2/3;
             grid-row: 2/3;
             display: grid;
-        }
 
-        .grid__container {
+            .grid__container {
+                // border: 3px rgb(0, 26, 255) solid;
+                // aspect-ratio: 1/1;
+                grid-column: 2/3;
+                grid-row: 2/3;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 3fr 3fr 4fr;
+                gap: 2%;
+                padding: 10vh 0;
+                // width: 90vw;
+                // height: 100%;
 
-            border: 3px rgb(0, 26, 255) solid;
-            // aspect-ratio: 1/1;
-            grid-column: 2/3;
-            grid-row: 2/3;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 3fr 3fr 4fr;
-            gap: 2%;
-            padding: 10vh 0;
-            // width: 90vw;
-            // height: 100%;
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
 
-            img {
-                object-fit: cover;
-                width: 100%;
-                height: 100%;
+                .square1 {
+                    display: grid;
+                    grid-column: 1/3;
+                    grid-row: 1/3;
+                }
+
+                // .main__another-brands {
+                //     border: 3px solid rgb(255, 247, 0);
+
+                //     display: grid;
+                //     grid-column: 2/3;
+                //     grid-row: 4/5;
+                // }
             }
+
+
         }
 
-        .square1 {
+
+        footer {
+            // border: 3px rgb(111, 134, 77) solid;
             display: grid;
-            grid-column: 1/3;
-            grid-row: 1/3;
+            grid-column: 1/4;
+            grid-row: 4/5;
+            width: 100%;
+            background-color: $light-grey;
         }
+
 
     }
 }
