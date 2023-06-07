@@ -1,15 +1,25 @@
+// скроллбар покрывается с нахлестом
+
+// миксины 
+// адаптивность 
+// респонсивность
+
+
 html {
 
     height: 100%;
     margin: 0;
 
-    // div {
-    //     border: 3px grey solid;
-    // }
+    div {
+        border: 3px grey solid;
+    }
 
+    nav {
+        border: 3px rgb(111, 134, 77) solid;
+    }
 
     body {
-        // border: 3px rgb(254, 18, 18) solid;
+        border: 3px rgb(254, 18, 18) solid;
         display: grid;
         grid-template-columns: 2% 1fr 2%;
         grid-template-rows: 20vh 1fr 20vh;
@@ -22,7 +32,7 @@ html {
 
 
         .grid__container {
-            // border: 3px rgb(0, 4, 255) solid;
+            border: 3px rgb(0, 4, 255) solid;
             aspect-ratio: 1/1;
             grid-column: 2/3;
             grid-row: 2/3;
