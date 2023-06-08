@@ -11,31 +11,22 @@ html body {
   margin: 0;
 }
 html body header {
+  border: 3px rgb(111, 134, 77) solid;
   display: grid;
   grid-column: 1/4;
   grid-row: 1/2;
   width: 100%;
+  height: 100%;
   background-color: rgb(217, 217, 217);
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-columns: repeat(8, 1fr);
 }
-html body header nav {
-  width: 100%;
+html body header .header__container {
+  height: 100%;
+}
+html body header .header__container .header__container__name {
   display: grid;
-  grid-row: 1/2;
-  grid-column: 2/-1;
-}
-html body header nav * {
-  border: 2px rgb(205, 169, 224) solid;
-}
-html body header .header__name {
-  display: grid;
-  grid-row: 2/3;
-}
-html body header .header__name * {
-  border: 2px rgb(130, 201, 237) solid;
-}
-html body header .header__name img {
-  object-fit: cover;
+  grid-column: 2/span 1;
 }
 html body main {
   grid-column: 2/3;
@@ -52,7 +43,8 @@ html body main .grid__container {
   padding: 10vh 0;
 }
 html body main .grid__container img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -67,6 +59,4 @@ html body footer {
   grid-row: 4/5;
   width: 100%;
   background-color: rgb(217, 217, 217);
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
