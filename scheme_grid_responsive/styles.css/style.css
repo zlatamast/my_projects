@@ -27,6 +27,7 @@ div {
 
 .main {
     display: grid;
+
     grid-template-columns: 50% 50%;
     grid-template-rows: repeat(3, 1fr);
 }
@@ -103,4 +104,21 @@ div {
 
 }
 
-/* @media (max-width: 549px) {} */
+@media (max-width: 549px) {
+    .main__container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .aside {
+        display: grid;
+        justify-content: center;
+        grid-row: 1/2;
+    }
+
+    .f1,
+    .f3 {
+        display: none;
+    }
+
+}
