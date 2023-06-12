@@ -20,7 +20,7 @@ div {
     grid-template-rows: 10% 60% 30%;
 }
 
-.ma {
+.main__container {
     display: grid;
     grid-template-columns: 60% 1fr;
 }
