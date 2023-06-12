@@ -4,18 +4,22 @@
 // адаптивность 
 // респонсивность
 
+// 
+
 $light-grey: rgb(217, 217, 217);
+
 
 html {
 
     height: 100%;
-    margin: 0;
 
     // div {
     //     border: 3px grey solid;
     // }
-
-
+    * {
+        padding: 0;
+        margin: 0;
+    }
 
     body {
 
@@ -29,31 +33,66 @@ html {
         // height: 100%;
         margin: 0;
 
+
         header {
 
-            border: 3px rgb(111, 134, 77) solid;
+            border: 3px rgb(255, 0, 242) solid;
             display: grid;
             grid-column: 1/4;
             grid-row: 1/2;
             width: 100%;
             height: 100%;
             background-color: $light-grey;
+            display: grid;
+            grid-template-columns: 10% 80% 10%;
 
-            grid-template-rows: 1fr 2fr 1fr;
-            grid-template-columns: repeat(8, 1fr);
+
+
 
             .header__container {
                 height: 100%;
+                width: 100%;
+                display: grid;
+                grid-column: 2/3;
+                grid-row: 2/3;
+                display: inline-flex;
+                justify-content: space-between;
+
 
                 .header__container__name {
-                    display: grid;
-                    grid-column: 2 / span 1;
+
+                    p {
+                        margin: 0;
+                    }
 
                 }
+
+                .header__container__nav {
+                    display: flex;
+                    width: 50%;
+
+                    nav {
+                        width: 100%;
+
+
+
+                        ul {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+
+
+                            li {
+                                display: flex;
+
+
+                                // padding: 0 5vw;
+                            }
+                        }
+
+                    }
+                }
             }
-
-
-
 
         }
 
@@ -61,6 +100,12 @@ html {
             grid-column: 2/3;
             grid-row: 2/3;
             display: grid;
+            grid-template-rows: 20vh 1fr 40vh;
+
+            p {
+                grid-column: 2/3;
+
+            }
 
             .grid__container {
                 // border: 3px rgb(0, 26, 255) solid;
@@ -87,13 +132,15 @@ html {
                     grid-row: 1/3;
                 }
 
-                // .main__another-brands {
-                //     border: 3px solid rgb(255, 247, 0);
+            }
 
-                //     display: grid;
-                //     grid-column: 2/3;
-                //     grid-row: 4/5;
-                // }
+            .main__sale {
+                border: 3px solid rgb(255, 247, 0);
+
+                display: grid;
+                grid-column: 2/3;
+                grid-row: 4/5;
+                height: 100%;
             }
 
 
