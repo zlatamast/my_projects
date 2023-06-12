@@ -18,11 +18,13 @@ div {
     border: solid 4px rgb(129, 224, 241);
     display: grid;
     grid-template-rows: 10% 60% 30%;
+    background-color: rgb(243, 182, 182);
 }
 
 .main__container {
     display: grid;
     grid-template-columns: 60% 1fr;
+    background-color: rgb(198, 182, 243);
 }
 
 .main {
@@ -36,22 +38,26 @@ div {
     display: grid;
     grid-column: 1/2;
     margin: 1vw;
+    background-color: rgb(227, 236, 185);
 }
 
 .section2 {
     display: grid;
     margin: 1vw;
+    background-color: rgb(227, 236, 185);
 }
 
 .section3 {
     display: grid;
     grid-column: 1/3;
     margin: 1vw;
+    background-color: rgb(227, 236, 185);
 }
 
 .aside {
     display: grid;
     justify-content: center;
+    background-color: rgb(236, 221, 185);
 }
 
 .header {
@@ -67,7 +73,9 @@ div {
 
 .footer div {
     margin: 1vw;
+    background-color: rgb(185, 235, 236);
 }
+
 
 @media (max-width: 765px) {
 
